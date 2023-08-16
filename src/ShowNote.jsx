@@ -6,7 +6,7 @@ import axios from 'axios';
 
 const ShowNote = (props) => {
     const deleteContent = ()=>{
-        console.log(props.id);
+        
         axios.post("https://keeper-app-backend-1d3c.onrender.com/delete", {id : props.id} )
         
     }
